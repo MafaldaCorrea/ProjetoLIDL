@@ -1,0 +1,314 @@
+nav {
+
+	@include mq(0,899px) {
+			height:50px;
+			position:fixed;
+			width:100%;
+			z-index:10;
+		}
+
+	.preheader {
+		background: #6d757c;
+	    margin-right: 25px;
+	    line-height: 30px;
+	    width:100%;
+	    position:relative;
+
+	    @include mq(0,899px) {
+			display:none;
+		}
+
+	    ul {
+	    	text-align:right;
+	    	max-width:1200px;
+	    	margin:0 auto;
+
+		    li {
+		    	display:inline-block;
+		    	margin-right:5px;
+		    	font-size:15px;
+		    	padding: 0 10px;
+
+		    	&:hover {
+		    		background:#4e5761;
+		    		text-decoration: underline;
+		    	}
+
+		    	&:last-of-type {
+		    		margin-right: 35px;
+		    	}
+
+
+
+		    	a {
+		    		color:#fff;
+
+		    	}
+
+		    }
+		}
+	}
+
+	.header {
+		height:87px;
+		background:#fff;
+
+		@include mq(0,899px) {
+			height: 50px;
+		}	
+
+		.innerheader {
+			max-width:1200px;
+		    margin:0 auto;
+			text-align:right;
+
+			figure {
+				width:104px;
+				height:104px;
+				position:absolute;
+				margin-left:13px;
+				margin-top:-21px;
+
+				@include mq(0,899px) {
+					width:40px;
+					height:40px;
+					margin:4px;
+				}
+
+				img{
+					width:100%;
+					height:auto;
+					box-shadow:2px 2px 5px 0 rgba(0,0,0,.5);
+					border:1px solid #fff;
+
+					@include mq(0,899px) {
+						box-shadow:1px 1px 3px 0 rgba(0,0,0,.5);
+					}
+				}
+			}
+
+			.burgermenu {
+				display:none;
+				text-align:center;
+
+				&:hover {
+					div {
+						background-color:#acb0b4;
+					}
+					span {
+						color:#acb0b4;
+					}
+				}
+
+				@include mq(0,899px) {
+					display:inline-block;
+					position:absolute;
+					top:5px;
+					left:60px;
+				}
+
+				div {
+					width: 28px;
+				    height: 2px;
+				    background-color: #2f3a44;
+				    margin: 5px auto;
+
+				    &:last-of-type {
+				    	margin-bottom:0;
+				    }
+				}
+
+				span {
+					text-transform:uppercase;
+					color:#2f3a44;
+					font-size:13px;
+					font-weight:600;
+				}
+			}
+			
+			ul {
+
+				li {
+					display:inline-block;
+					width:60px;
+					text-align:center;
+					vertical-align:top;
+					margin-left:10px;
+
+					@include mq(0,899px) {
+						width:33px;
+						padding: 10px 0;
+					}
+
+					&:last-of-type {
+			    		margin-right: 35px;
+			    		@include mq(0,899px) {
+							margin-right:5px;
+						}
+			    	}
+
+					&:hover {
+						text-decoration:underline;
+					}
+
+					a {
+						font-size: 13px;
+						color:#2f3a44;
+
+						img {
+							@include mq(0,899px) {
+								height:33px;
+								width:33px;
+							}
+
+						}
+
+						span {
+							@include mq(0,899px) {
+								display:none;
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	.navigation {
+		background:#fff;
+		height:44px;
+
+		@include mq(0,899px) {
+			display:none;
+		}
+		ul {
+			max-width:1200px;
+	    	margin:0 auto;
+			li {
+				display:inline-block;
+				padding:5px 15px;
+				color:#2f3a44;
+
+				&:first-of-type {
+					padding:5px 10px;
+					margin-left:8px;
+				}
+				a {
+					color:#2f3a44;
+					font-size:27px;
+					display:block;
+					padding-bottom:9px;
+
+					&:hover {
+						color:#acb0b4;
+						border-bottom: 3px solid #eaebec;
+					}
+
+				}
+			}
+		}
+	}
+
+	.navigationmobile {
+		border-top: #d5d8da 4px solid;
+		max-width:480px;
+		position:relative;
+		z-index:10;
+
+		&:before {
+			content:'';
+			height:0px;
+			width:0px;
+			border-left: 10px transparent solid;
+			border-right:10px transparent solid;
+			border-bottom: 10px #d5d8da solid;
+			position:absolute;
+			top:-13px;
+			left:61px;
+
+		}
+	
+		ul {
+			
+			li {
+				line-height:45px;
+				color:#2f3a44;
+				border-top: 1px solid #d5d8da;
+			    background: #fff;
+			    padding-left:40px;
+			    font-size:18px;
+
+			    &:hover {
+			    	a {
+			    		color:#acb0b4;
+			    	}
+			    }
+
+			    a {
+			    	width:100%;
+			    	display:block;
+			    	color:#2f3a44;
+			    }
+
+			}
+		}
+
+	}
+
+	.preheadermobile {
+		display:inline-block;
+		position:absolute;
+		left:0;
+		top:238px;
+		background-color:#6d757c;
+		width:100%;
+		max-width:480px;
+		height:1000px;
+		z-index:10;
+
+		ul {
+			margin: 20px 0 10px 0; 
+			li {
+				padding-left:40px;
+				line-height:25px;
+				font-size:15px;
+
+				&:hover {
+					background-color:#4e5761;
+
+					a {
+						text-decoration:underline;
+					}
+				}
+
+				a {
+					color:#fff;
+					width:100%;
+			    	display:block;
+				}
+
+			}
+		}
+
+		.socialmedia {
+			display:block;
+			margin: 0 0 0 30px;
+
+			li {
+				display:inline-block;
+				height:52px;
+				width:52px;
+				padding:10px;
+				vertical-align:middle;
+
+				img {
+					height:33px;
+					width:33px;
+					padding:0;
+				}
+
+			}
+		}
+	}
+}

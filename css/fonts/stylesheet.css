@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'News Gothic BT';
+    src: url('NewsGothicBT-Reg.woff2') format('woff2'),
+        url('NewsGothicBT-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic XBd BT';
+    src: url('NewsGothicXBdBT-Reg.woff2') format('woff2'),
+        url('NewsGothicXBdBT-Reg.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic Cn BT';
+    src: url('NewsGothicCnBT-It.woff2') format('woff2'),
+        url('NewsGothicCnBT-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'News Gothic Bd Cn BT';
+    src: url('NewsGothicBdCnBT-Reg.woff2') format('woff2'),
+        url('NewsGothicBdCnBT-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic BT';
+    src: url('NewsGothicBT-It.woff2') format('woff2'),
+        url('NewsGothicBT-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'News Gothic Bd Cn BT';
+    src: url('NewsGothicBdCnBT-It.woff2') format('woff2'),
+        url('NewsGothicBdCnBT-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'News Gothic Bd BT';
+    src: url('NewsGothicBdBT-Reg.woff2') format('woff2'),
+        url('NewsGothicBdBT-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic Cn BT';
+    src: url('NewsGothicCnBT-Reg.woff2') format('woff2'),
+        url('NewsGothicCnBT-Reg.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic Bd BT';
+    src: url('NewsGothicBdBT-It.woff2') format('woff2'),
+        url('NewsGothicBdBT-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+

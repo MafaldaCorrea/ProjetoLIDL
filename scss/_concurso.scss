@@ -1,0 +1,198 @@
+.concurso {
+	font-size:0;
+	background-image: linear-gradient(to bottom,#FFED00,#fff144);
+	width:100%;
+	position:relative;
+	overflow:hidden;
+
+	.img-left {
+		height:130px;
+		transform:rotate(90deg);
+		position:absolute;
+		left:-280px;
+		top:220px;
+		opacity:0.3;
+
+		@include mq(400px,899px) {
+			height:250px;
+			left:-550px;
+			top:480px;
+		}
+
+		@include mq(0,399px) {
+			display:none;
+		}
+	}
+
+	.img-right {
+		height:130px;
+		transform:rotate(-90deg);
+		position:absolute;
+		right:-280px;
+		top:220px;
+		opacity:0.3;
+
+		@include mq(400px,899px) {
+			height:250px;
+			right:-550px;
+			top:480px;
+		}
+
+		@include mq(0,399px) {
+			display:none;
+		}
+
+
+	}
+
+	.wrapper {
+		max-width:900px;
+		margin:0 auto;
+		aside {
+			display:inline-block;
+			padding-left:30px;
+			position:relative;
+			z-index:5;
+
+
+		}
+		.participar {
+			font-size:14px;
+			width:60%;
+			margin: 80px 0 20px 0;
+			vertical-align:top;
+
+			@include mq(0,899px) {
+				width:100%;
+			}
+
+			h1 {
+				text-transform: uppercase;
+				font-size:37px;
+				@include bold;
+				color:#005599;
+				margin-bottom:20px;
+
+			}
+
+			h3 {
+				color: #E10C15;
+				font-size:25px;
+				@include bold;
+				width:95%;
+			}
+
+			h5 {
+				font-size:20px;
+				display:block;
+				margin-top:50px;
+				width:70%;
+				padding: 10px 10px 10px 25px;
+				position:relative;
+				background-color:rgba(255, 255, 255,0.6);
+
+				&:before {
+					content:'';
+					height:100%;
+					width:3px;
+					background-image: linear-gradient(to bottom,#E10C15,#87161b);
+					position:absolute;
+					left:0;
+					top:0;
+				}
+
+				@include mq(0,420px) {
+					width:95%;
+				}
+
+			}
+
+			ol {
+				text-align:left;
+				list-style-type: decimal;
+				margin:15px 0 30px 20px; 
+				font-size:20px;
+				li {
+					padding-left:30px;
+					padding-bottom:7px;
+
+				}
+			}
+
+			input {
+				display:none;
+			}
+
+			label {
+				display:inline-block;
+				width:190px;
+				line-height:40px;
+				background-color:red;
+				padding:0 20px;
+				font-size:15px;
+				color:#fff;
+				@include bold;
+				@include button-gradient;
+				background-image: linear-gradient(to bottom,#E10C15,#87161b);
+				text-transform:uppercase;
+
+				&:hover {
+					background-image: linear-gradient(to bottom,#87161b,#87161b);
+					transition: all 200ms linear;
+				}
+
+				@include mq(0,420px) {
+					display:block;
+					margin-bottom:10px;
+
+				}
+
+			}
+
+
+			button {
+				display:inline-block;
+				width:190px;
+				line-height:40px;
+				background-color:red;
+				padding:0 20px;
+				font-size:15px;
+				color:#fff;
+				@include bold;
+				@include button-gradient;
+				text-transform:uppercase;
+			}
+
+			.hidden-button {
+				display:none;
+				width:80%;
+				background-image: linear-gradient(to bottom,#33f70c,#279112);
+
+				&:hover {
+					background-image: linear-gradient(to bottom,#279112,#279112);
+					transition: all 200ms linear;
+				}
+			}
+		}
+
+		.cara-lidl {
+			width:320px;
+			height:466px;
+			margin: 40px 0;
+			background-repeat:no-repeat;
+	   		background-size:cover;
+	    	background-position:center;
+	    	box-shadow:2px 2px 5px 0 rgba(0,0,0,.5);
+
+	    	@include mq(0,899px) {
+				width:320px;
+				margin:40px auto;
+				display:block;
+			}
+
+
+		}
+	}
+
+
+}

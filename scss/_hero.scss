@@ -1,0 +1,65 @@
+.hero {
+	width:100%;
+	background-color:#191B1A;
+
+	figure {
+		max-width:1200px;
+		margin:0 auto;
+		height:450px;
+		background-image:url("../images/pedro.jpg");
+		background-repeat:no-repeat;
+   		background-size:cover;
+    	background-position:center;
+    	font-size:0;
+    	position:relative;
+
+    	@include mq(651px,899px) {
+    		background-position:35%;
+    		padding-top:50px;
+    	}
+
+    	@include mq(0,650px) {
+    		background-image:url("../images/pedro-mobile.jpg");
+    		background-position:60%;
+    		padding-top:50px;
+
+    		h2 {
+    			text-transform:uppercase;
+    			font-size:45px;
+    			color:#fff;
+    			@include bold;
+    			margin: 20px 0 0 20px;
+    			width: 300px;
+
+    		}
+
+    		span {
+    			text-transform:uppercase;
+    			display:block;
+    			font-size:37px;
+    			color:#fff;
+    			margin: 5px 0 0 20px;
+
+    		}
+
+    		h4 {
+    			color:#fff;
+    			@include bold;
+    			font-size:23px;
+    			position:absolute;
+    			bottom:60px;
+    			margin-left:20px;
+    		}
+
+    		h6 {
+    			color:#fff;
+    			font-size:17px;
+    			position:absolute;
+    			bottom:33px;
+    			margin-left:20px;
+
+    		}
+    	}
+	}
+
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'News Gothic Cn BT';
+    src: url('NewsGothicCnBT-Reg.woff2') format('woff2'),
+        url('NewsGothicCnBT-Reg.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News Gothic Bd Cn BT';
+    src: url('NewsGothicBdCnBT-Reg.woff2') format('woff2'),
+        url('NewsGothicBdCnBT-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

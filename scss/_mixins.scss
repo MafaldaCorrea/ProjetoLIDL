@@ -1,0 +1,44 @@
+//FONTS
+
+@mixin bold {
+	font-family: 'News Gothic Bd Cn BT';
+}
+
+// STYLES
+
+@mixin button-gradient {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+	border: none;
+	background-image: linear-gradient(to bottom,#0076bf,#06507f);
+	color:white;
+	cursor:pointer;
+	vertical-align: top;
+
+	&:hover {
+		text-decoration:underline;
+		background-image: linear-gradient(to bottom,#06507f,#06507f);
+		transition: all 200ms linear;
+	}
+}
+
+@mixin input-style {
+	font-family:'News Gothic Cn BT', sans-serif;
+	height:44px;
+	vertical-align: middle;
+	padding: 0 20px;
+	color: #2f3a44;
+	border: 1px solid #d5d8da;
+	font-size:15px;
+
+	&::placeholder {
+		color:#acadab;
+	}
+}
+
+//MQ
+
+@mixin mq($smallerValue,$biggerValue) {
+	@media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+		@content;
+ 	}
+}

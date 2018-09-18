@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/_header.scss",
+		"../scss/_footer.scss"
+	],
+	"sourcesContent": [
+		"@import 'header';\r\n@import 'footer';",
+		"body {\r\n\tbackground:red;\r\n}",
+		"body {\r\n\tfont-size:150px;\r\n}"
+	],
+	"mappings": "qECAA,AAAA,IAAI,AAAC,CACJ,UAAU,CAAC,GAAI,CACf,qECFD,AAAA,IAAI,AAAC,CACJ,SAAS,CAAC,KAAM,CAChB",
+	"names": []
+}

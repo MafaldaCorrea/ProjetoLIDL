@@ -1,0 +1,7 @@
+.concurso {
+  font-size: 0;
+  background-color: #FFED00;
+  width: 100%; }
+  .concurso .wrapper {
+    max-width: 1200px;
+    margin: 0 auto; }
