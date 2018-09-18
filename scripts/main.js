@@ -74,7 +74,7 @@ $(document).ready(() => {
 
 	      $('#scroll-up').hide();
 
-	    } else {
+	    } else if (position > 10) {
 
 	      $('#scroll-up').fadeIn();
 

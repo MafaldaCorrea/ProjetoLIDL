@@ -724,7 +724,8 @@ footer {
     border: none;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    display: none; }
     footer .scroll:hover {
       background-color: #0076bf; }
       footer .scroll:hover:before {
